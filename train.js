@@ -1,3 +1,32 @@
+// MIT TASK A
+let count = 0;
+function countLetters(letter, word) {
+    for(let i = 0; i <= word.length + 1; i++) {
+        if(letter === word[i]) {
+            count++;
+        };
+    }
+    console.log(`The word ${word} has ${count} ${letter}`);
+    count = 0;
+};
+
+countLetters("n", "engineer");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 console.log("Jack Ma maslahatlari");
 
 const list = [
@@ -9,7 +38,6 @@ const list = [
   "endi dam oling, foydasi yoq endi", //60
 ];
 
-/*
 
 // Callback funtion
 function maslahatBering(a, callback ) {
@@ -33,72 +61,73 @@ maslahatBering(75, (err, data) => {
 });
 console.log("passed here 1");
 
-*/
-
-// Async Function
-// async function maslahatBering(a) {
-//   if (typeof a !== "number") throw new Error("insert a number");
-//   else if (a <= 20) return list[0];
-//   else if (a > 20 && a <= 30) return list[1];
-//   else if (a > 30 && a <= 40) return list[2];
-//   else if (a > 40 && a <= 50) return list[3];
-//   else if (a > 50 && a <= 60) return list[4];
-//   else {
-//     return list[5];
-//     // setTimeout(() => {
-//     //     return list[5];
-//     // }, 5000);
-//   }
-// }
 
 
+Async Function
+async function maslahatBering(a) {
+  if (typeof a !== "number") throw new Error("insert a number");
+  else if (a <= 20) return list[0];
+  else if (a > 20 && a <= 30) return list[1];
+  else if (a > 30 && a <= 40) return list[2];
+  else if (a > 40 && a <= 50) return list[3];
+  else if (a > 50 && a <= 60) return list[4];
+  else {
+    return list[5];
+    // setTimeout(() => {
+    //     return list[5];
+    // }, 5000);
+  }
+}
 
 
 
-// // call via then/catch
-// console.log("passed here 0");
-// maslahatBering(25)
-//   .then((data) => {
-//     console.log("javob:", data);
-//   })
-//   .catch((err) => {
-//     console.log("ERROR:", err);
-//   });
-//   maslahatBering(35)
-//   .then((data) => {
-//     console.log("javob:", data);
-//   })
-//   .catch((err) => {
-//     console.log("ERROR:", err);
-//   });
-// console.log("passed here 1");
+
+
+// call via then/catch
+console.log("passed here 0");
+maslahatBering(25)
+  .then((data) => {
+    console.log("javob:", data);
+  })
+  .catch((err) => {
+    console.log("ERROR:", err);
+  });
+  maslahatBering(35)
+  .then((data) => {
+    console.log("javob:", data);
+  })
+  .catch((err) => {
+    console.log("ERROR:", err);
+  });
+console.log("passed here 1");
 
 
 
-// async function maslahatBering(a) {
-//   if (typeof a !== "number") throw new Error("insert a number");
-//   else if (a <= 20) return list[0];
-//   else if (a > 20 && a <= 30) return list[1];
-//   else if (a > 30 && a <= 40) return list[2];
-//   else if (a > 40 && a <= 50) return list[3];
-//   else if (a > 50 && a <= 60) return list[4];
-//   else {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//         resolve(list[5]);
-//     }, 5000);
-//     })
+async function maslahatBering(a) {
+  if (typeof a !== "number") throw new Error("insert a number");
+  else if (a <= 20) return list[0];
+  else if (a > 20 && a <= 30) return list[1];
+  else if (a > 30 && a <= 40) return list[2];
+  else if (a > 40 && a <= 50) return list[3];
+  else if (a > 50 && a <= 60) return list[4];
+  else {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve(list[5]);
+    }, 5000);
+    })
    
-//   }
-// }
+  }
+}
 
-// // async/await
-// async function run() {
-//     let javob = await maslahatBering(65);
-//     console.log(javob);
-//     javob = await maslahatBering(32);
-//     console.log(javob);
-//     javob = await maslahatBering(42);
-//     console.log(javob);
-// };
-// run();
+// async/await
+async function run() {
+    let javob = await maslahatBering(65);
+    console.log(javob);
+    javob = await maslahatBering(32);
+    console.log(javob);
+    javob = await maslahatBering(42);
+    console.log(javob);
+};
+run();
+*/
