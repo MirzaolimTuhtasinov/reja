@@ -72,7 +72,7 @@
               <div>Available</div>
             </div>
             <div class="about-p">
-              <div class="about-p-info">Adress:</div>
+              <div class="about-p-info">Address:</div>
               <div><%=user.adress%></div>
             </div>
           </div>
@@ -132,7 +132,7 @@
               <span>75%</span>
             </div>
             <div class="progress">
-              <div class="progress-fill p70"></div>
+              <div class="progress-fill p75"></div>
             </div>
             <div class="skill-title">
               <span><%=user.skills[4]%></span>
@@ -141,7 +141,6 @@
             <div class="progress">
               <div class="progress-fill p85"></div>
             </div>
-          
           </div>
           <div class="marginer"></div>
           <div class="left_5">
@@ -149,42 +148,182 @@
 
             <div>
               <span class="extra-icon">
-                <img src="icon/icons.png" class="icon-2"/>
+                <img src="icon/icons.png" class="icon-2" />
               </span>
-              <span>
-                <%=user.extra_skills[0]%>
-              </span>
+              <span> <%=user.extra_skills[0]%> </span>
             </div>
             <div>
               <span class="extra-icon">
-                <img src="icon/icons.png" class="icon-2"/>
+                <img src="icon/icons.png" class="icon-2" />
               </span>
-              <span>
-                <%=user.extra_skills[1]%>
-              </span>
+              <span> <%=user.extra_skills[1]%> </span>
             </div>
             <div>
               <span class="extra-icon">
-                <img src="icon/icons.png" class="icon-2"/>
+                <img src="icon/icons.png" class="icon-2" />
               </span>
-              <span>
-                <%=user.extra_skills[2]%>
-              </span>
+              <span> <%=user.extra_skills[2]%> </span>
             </div>
             <div>
               <span class="extra-icon">
-                <img src="icon/icons.png" class="icon-2"/>
+                <img src="icon/icons.png" class="icon-2" />
               </span>
-              <span>
-                <%=user.extra_skills[3]%>
-              </span>
+              <span> <%=user.extra_skills[3]%> </span>
             </div>
-
           </div>
           <div class="marginer"></div>
         </div>
-        <div class="midd_frame"></div>
-        <div class="right_frame"></div>
+        <div class="midd_frame">
+          <div class="midd_frame_top">
+            <span class="figure-icon-1">
+              <img src="btn_icon/Ellipse 15.png" class="figure-icons-img" />
+            </span>
+            <span class="figure-icon-2">
+              <img src="btn_icon/Ellipse 16.png" class="figure-icons-img" />
+            </span>
+            <span class="figure-icon-3">
+              <img src="btn_icon/Rectangle 52.png" class="figure-icons-img" />
+            </span>
+            <span class="figure-icon-4">
+              <img src="btn_icon/Ellipse 12.png" class="figure-icons-img" />
+            </span>
+            <span class="figure-icon-5">
+              <img src="btn_icon/Ellipse 13.png" class="figure-icons-img" />
+            </span>
+            <span class="figure-icon-6">
+              <img src="btn_icon/Rectangle 51.png" class="figure-icons-img" />
+            </span>
+            <span class="figure-icon-7">
+              <img src="btn_icon/Polygon 1.png" class="figure-icons-img" />
+            </span>
+            <div class="midd_frame_top_left">
+              <div class="work_place"><%=user.work_place%></div>
+              <div class="service_desc">
+                <%=user.about_me%> <%=user.service_desc%>
+              </div>
+              <button class="hire_me">
+                HIRE ME
+                <img src="btn_icon/Frame.png" />
+              </button>
+            </div>
+            <div class="midd_frame_top_right">
+              <img class="your_image" src="images/Your Image 1.png" />
+            </div>
+          </div>
+          <div class="midd_frame_bottom">
+            <div class="midd_frame_bottom_txt">
+              <div class="my_services_txt">My Services</div>
+              <div class="midd_frame_bottom_service_desc">
+                <%=user.service_desc%>
+              </div>
+            </div>
+            <div class="midd_frame_bottom_bot">
+              <div class="my_services">
+                <div class="my_services_img">
+                  <img src="box_images/coding.png"/>
+                </div>
+                <div class="my_service_dir">
+                  Web Development
+                </div>
+                <div class="my_service_dir_type">
+                  Blog, E-Commerce
+                </div>
+              </div>
+              <div class="my_services">
+                <div class="my_services_img">
+                  <img src="box_images/Icons_illustration.png"/>
+                </div>
+                <div class="my_service_dir">
+                  UI/UX Design
+                </div>
+                <div class="my_service_dir_type">
+                  Mobile App, Website Design
+                </div>
+              </div>
+              <div class="my_services">
+                <div class="my_services_img">
+                  <img src="box_images/Icons_Microphone.png"/>
+                </div>
+                <div class="my_service_dir">
+                  Sound Design
+                </div>
+                <div class="my_service_dir_type">
+                  Voice Over, Beat Making
+                </div>
+              </div>
+              <div class="my_services">
+                <div class="my_services_img">
+                  <img src="box_images/Icons_game-development.png"/>
+                </div>
+                <div class="my_service_dir">
+                  Game Design
+                </div>
+                <div class="my_service_dir_type">
+                  Character Design, Props & Objects
+                </div>
+              </div>
+              <div class="my_services">
+                <div class="my_services_img">
+                  <img src="box_images/Icons_Photographer.png"/>
+                </div>
+                <div class="my_service_dir">
+                  Photography
+                </div>
+                <div class="my_service_dir_type">
+                  Portrait, Product Photography
+                </div>
+              </div>
+              <div class="my_services">
+                <div class="my_services_adv">
+                  Advertising
+                </div>
+                <div class="my_service_dir2">
+                  <%=user.about_me%>
+                </div>
+                <div class="my_service_dir_adv2">
+                  OFFER NOW >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <button class="menu-icons menu-icons-exept">  
+            <img src="menu_icon/Vector1.png"/>
+            <span class="tooltip-txt">Contrast</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+          <button  class="menu-icons">
+            <img src="menu_icon/Icons_Home.png"/>
+            <span class="tooltip-txt">Home</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+          <button  class="menu-icons">
+            <img src="menu_icon/file-code.png"/>
+            <span class="tooltip-txt">Service</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+          <button  class="menu-icons">
+            <img src="menu_icon/cv.png"/>
+            <span class="tooltip-txt">CV</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+          <button  class="menu-icons">
+            <img src="menu_icon/Vector.png"/>
+            <span class="tooltip-txt">Portfolio</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+          <button  class="menu-icons">
+            <img src="menu_icon/Blog.png"/>
+            <span class="tooltip-txt">Blog</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+          <button  class="menu-icons">
+            <img src="menu_icon/Icons_Contact.png"/>
+            <span class="tooltip-txt">Contact</span>
+            <img class="tooltip-img" src="menu_icon/Union.png"/>
+          </button >
+        </div>
       </div>
     </div>
   </body>
