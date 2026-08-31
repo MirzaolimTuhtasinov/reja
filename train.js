@@ -1,16 +1,24 @@
-// MIT TASK A
-let count = 0;
-function countLetters(letter, word) {
-    for(let i = 0; i <= word.length + 1; i++) {
-        if(letter === word[i]) {
-            count++;
-        };
-    }
-    console.log(`The word ${word} has ${count} ${letter}`);
-    count = 0;
-};
+// MIT TASK B
+  
+function countDigits(given) {
+  let digits = 0;
 
-countLetters("n", "engineer");
+  for(let i = 0; i < given.length; i++) {
+    if(given[i] >= 0 && given[i] <= 9) {
+      digits++;
+    }       
+  }
+  console.log(digits);
+
+}
+countDigits("duksanjw28340h9fjnjk309jfcdsc08j3curn3978hcnrjk893nibu");
+
+countDigits("3124dwed")
+
+
+
+
+
 
 
 
@@ -27,6 +35,21 @@ countLetters("n", "engineer");
 
 
 /*
+// MIT TASK A
+let count = 0;
+function countLetters(letter, word) {
+    for(let i = 0; i <= word.length + 1; i++) {
+        if(letter === word[i]) {
+            count++;
+        };
+    }
+    console.log(`The word ${word} has ${count} ${letter}`);
+    count = 0;
+};
+
+countLetters("n", "engineer");
+
+
 console.log("Jack Ma maslahatlari");
 
 const list = [
