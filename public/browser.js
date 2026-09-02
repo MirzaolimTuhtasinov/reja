@@ -14,7 +14,7 @@ function itemTemplate(item) {
         <button data-id="${item.id}"" class="delete-me btn btn-danger btn-sm">O'chirish</button>
         </div>
 
-    </li>`
+    </li>`;
 }
 
 let createField = document.getElementById("create-field");
@@ -24,7 +24,7 @@ document.getElementById("create-form")
     e.preventDefault();
     axios
         .post("/create-item", { reja: createField.value })
-        .then((data) => {
+        .then((response) => {
             document
                 .getElementById("item-list")
                 .insertAdjacentHTML("beforeend", itemTemplate(response.data));
