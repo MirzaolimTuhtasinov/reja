@@ -5,7 +5,7 @@ const mongodb = require("mongodb");
 
 let db;
 const connectionString =
-  "mongodb+srv://mirzaolimtoxtasinov8_db_user:IquZ6zIOqgYPjP6Y@cluster0.eg9hzcd.mongodb.net/";
+  "mongodb+srv://mirzaolimtoxtasinov8_db_user:IquZ6zIOqgYPjP6Y@cluster0.eg9hzcd.mongodb.net/REJA";
 
 
 
