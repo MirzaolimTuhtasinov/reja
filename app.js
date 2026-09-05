@@ -46,6 +46,17 @@ app.post("/delete-item", (req, res) => {
   });
 });
 
+app.post("/delete-items", (req, res) => {
+  db.collection("plans").deleteMany({}, function(err, data) {
+    if (err) {
+      console.log(err);
+      return res.json({ state: "fail" });
+    }
+
+    res.json({ state: "success" });
+  });
+});
+
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
 });

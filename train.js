@@ -1,22 +1,47 @@
-// MIT TASK B
-  
-function countDigits(given) {
-  let digits = 0;
+// MIT TASK C =>
 
-  for(let i = 0; i < given.length; i++) {
-    if(given[i] >= 0 && given[i] <= 9) {
-      digits++;
-    }       
+  class Shop  {
+    constructor(non, lagmon, cola) {
+      this.non = non;
+      this.lagmon = lagmon;
+      this.cola = cola;
+    }
+
+    qoldiq() {
+      const moment = require("moment");
+      const time = moment().format("HH:mm");
+      
+      console.log(`Hozir ${time}'da ${this.non}'ta non, ${this.lagmon}'ta lagmon va ${this.cola}'ta cola mavjud`);
+    };
+
+
+    qabul(input, value) {
+      if(input === "non") {
+        this.non += value;
+      } else if(input === "lagmon") {
+        this.lagmon += value;
+      } else if(input === "cola") {
+        this.cola += value;
+      }
+    };
+    sotish(input, value) {
+      if(input === "non") {
+        this.non -= value;
+      } else if(input === "lagmon") {
+        this.lagmon -= value;
+      } else if(input === "cola") {
+        this.cola -= value;
+      }
+    };
+
   }
-  console.log(digits);
 
-}
-countDigits("duksanjw28340h9fjnjk309jfcdsc08j3curn3978hcnrjk893nibu");
+  const osh = new Shop(4, 5, 2);
 
-countDigits("3124dwed")
+  osh.sotish("non", 3);
+  osh.qabul("cola", 4);
 
-
-
+  osh.qoldiq();
 
 
 
@@ -32,6 +57,24 @@ countDigits("3124dwed")
 
 
 
+
+
+// // MIT TASK B
+  
+// function countDigits(given) {
+//   let digits = 0;
+
+//   for(let i = 0; i < given.length; i++) {
+//     if(given[i] >= 0 && given[i] <= 9) {
+//       digits++;
+//     }       
+//   }
+//   console.log(digits);
+
+// }
+// countDigits("duksanjw28340h9fjnjk309jfcdsc08j3curn3978hcnrjk893nibu");
+
+// countDigits("3124dwed");
 
 
 /*

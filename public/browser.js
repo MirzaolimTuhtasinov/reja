@@ -60,3 +60,24 @@ document.addEventListener("click", function (e) {
         alert("Siz edit tugmasini bosdingiz")
     }
 });
+
+document.addEventListener("click", function (e) {
+
+    console.log(e.target);
+// delete oper
+    if(e.target.classList.contains("delete-all")) {
+        if(confirm("Aniq o'chirmoqchimisiz")) {
+            axios
+                .post("/delete-items")
+                .then((response) => {
+                    console.log(response.data);
+                    document.querySelectorAll(".list-group").forEach(item => {
+                        item.remove();
+                    });
+                })
+                .catch((err) => {
+                    console.log("Iltimos qaytadan urining");
+                });
+        };
+    }
+});
