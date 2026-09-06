@@ -3,7 +3,6 @@ console.log("Web serverni boshlash");
 const express = require("express");
 const app = express();
 const fs = require("fs");
-const { use } = require("react");
 
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
@@ -53,8 +52,20 @@ app.post("/delete-items", (req, res) => {
       return res.json({ state: "fail" });
     }
 
-    res.json({ state: "success" });
+    res.json({ state: "hamma rejalar ochirildi" });
   });
+});
+
+app.post('/edit-item', (req, res) => {
+  const data = req.body;
+  console.log(data);
+  db.collection("plans").findOneAndUpdate(
+    { _id: new mongodb.ObjectId(data._id) }, 
+    { $set: { reja: data.new_input } }, 
+    function (err, data) {
+      res.json({ state: "succes" });
+    }
+  );
 });
 
 app.get("/author", (req, res) => {
