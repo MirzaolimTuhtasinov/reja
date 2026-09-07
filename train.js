@@ -1,47 +1,41 @@
-// MIT TASK C =>
+//  MIT task D. Version-1
 
-  class Shop  {
-    constructor(non, lagmon, cola) {
-      this.non = non;
-      this.lagmon = lagmon;
-      this.cola = cola;
-    }
+function checkContent(input1, input2) {
+  const new_input1 = input1.split("");
+  const new_input2 = input2.split("");
+  new_input1.sort();
+  new_input2.sort();
+  const new1 =new_input1.join("");
+  const new2 = new_input2.join("")
+  console.log(new1);
+  console.log(new2);
+  console.log(new1 === new2);
+}
 
-    qoldiq() {
-      const moment = require("moment");
-      const time = moment().format("HH:mm");
-      
-      console.log(`Hozir ${time}'da ${this.non}'ta non, ${this.lagmon}'ta lagmon va ${this.cola}'ta cola mavjud`);
-    };
+checkContent("focuffs", "fufsofc");
 
 
-    qabul(input, value) {
-      if(input === "non") {
-        this.non += value;
-      } else if(input === "lagmon") {
-        this.lagmon += value;
-      } else if(input === "cola") {
-        this.cola += value;
-      }
-    };
-    sotish(input, value) {
-      if(input === "non") {
-        this.non -= value;
-      } else if(input === "lagmon") {
-        this.lagmon -= value;
-      } else if(input === "cola") {
-        this.cola -= value;
-      }
-    };
 
-  }
+// //  MIT task D  version-2   If there are 2 or more same characters in one word, this function not valid to proceed
 
-  const osh = new Shop(4, 5, 2);
+// function checkContent(input1, input2) {
+//   let count = 0;
+//   if ((input1.length === input2.length)) {
+//     for (let i = 0; i < input1.length; i++) {
+//       for (let q = 0; q < input2.length; q++) {
+//         if (input1.charAt(i) === input2.charAt(q)) {
+//           count++;
+//         }
+//       }
+//     }
+//   } else return console.log(false);
+// console.log(count);
+//   if(input1.length === count){
+//     return console.log(true);
+//   } else return console.log(false);
+// } 
 
-  osh.sotish("non", 3);
-  osh.qabul("cola", 4);
-
-  osh.qoldiq();
+// checkContent("focus", "ufsoc");
 
 
 
@@ -57,17 +51,59 @@
 
 
 
+// // MIT TASK C =>
 
+//   class Shop  {
+//     constructor(non, lagmon, cola) {
+//       this.non = non;
+//       this.lagmon = lagmon;
+//       this.cola = cola;
+//     }
+
+//     qoldiq() {
+//       const moment = require("moment");
+//       const time = moment().format("HH:mm");
+
+//       console.log(`Hozir ${time}'da ${this.non}'ta non, ${this.lagmon}'ta lagmon va ${this.cola}'ta cola mavjud`);
+//     };
+
+//     qabul(input, value) {
+//       if(input === "non") {
+//         this.non += value;
+//       } else if(input === "lagmon") {
+//         this.lagmon += value;
+//       } else if(input === "cola") {
+//         this.cola += value;
+//       }
+//     };
+//     sotish(input, value) {
+//       if(input === "non") {
+//         this.non -= value;
+//       } else if(input === "lagmon") {
+//         this.lagmon -= value;
+//       } else if(input === "cola") {
+//         this.cola -= value;
+//       }
+//     };
+
+//   }
+
+//   const osh = new Shop(4, 5, 2);
+
+//   osh.sotish("non", 3);
+//   osh.qabul("cola", 4);
+
+//   osh.qoldiq();
 
 // // MIT TASK B
-  
+
 // function countDigits(given) {
 //   let digits = 0;
 
 //   for(let i = 0; i < given.length; i++) {
 //     if(given[i] >= 0 && given[i] <= 9) {
 //       digits++;
-//     }       
+//     }
 //   }
 //   console.log(digits);
 
@@ -75,7 +111,6 @@
 // countDigits("duksanjw28340h9fjnjk309jfcdsc08j3curn3978hcnrjk893nibu");
 
 // countDigits("3124dwed");
-
 
 /*
 // MIT TASK A
