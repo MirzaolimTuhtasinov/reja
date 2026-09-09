@@ -1,20 +1,46 @@
-//  MIT task D. Version-1
-
-function checkContent(input1, input2) {
-  const new_input1 = input1.split("");
-  const new_input2 = input2.split("");
-  new_input1.sort();
-  new_input2.sort();
-  const new1 =new_input1.join("");
-  const new2 = new_input2.join("")
-  console.log(new1);
-  console.log(new2);
-  console.log(new1 === new2);
+// MIT task E
+function getReverse(input) {
+  const new_input = input.split("").reverse();
+  const final_input = new_input.join("");
+  console.log(final_input);
 }
 
-checkContent("focuffs", "fufsofc");
+getReverse("Good job");
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //  MIT task D. Version-1
+
+// function checkContent(input1, input2) {
+//   const new_input1 = input1.split("");
+//   const new_input2 = input2.split("");
+//   new_input1.sort();
+//   new_input2.sort();
+//   const new1 =new_input1.join("");
+//   const new2 = new_input2.join("")
+//   console.log(new1);
+//   console.log(new2);
+//   console.log(new1 === new2);
+// }
+
+// checkContent("focuffs", "fufsofc");
 
 // //  MIT task D  version-2   If there are 2 or more same characters in one word, this function not valid to proceed
 
@@ -33,23 +59,9 @@ checkContent("focuffs", "fufsofc");
 //   if(input1.length === count){
 //     return console.log(true);
 //   } else return console.log(false);
-// } 
+// }
 
 // checkContent("focus", "ufsoc");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // // MIT TASK C =>
 
