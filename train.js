@@ -1,11 +1,23 @@
-// MIT task E
-function getReverse(input) {
-  const new_input = input.split("").reverse();
-  const final_input = new_input.join("");
-  console.log(final_input);
+// MIT TASK F
+function findDoublers(input) {
+  const new_input = input.split("").sort();
+  console.log(new_input);
+  // let count = 0;
+  for(let i = 0; i < new_input.length; i++) {
+    if(new_input[i] === new_input[i + 1]) {
+      console.log(new_input[i]);
+      console.log(true);   // Agar bir xil qiymatlar yoq bolsa qiymat qaytarmaydi.
+      // count++;         // Agar bir xil qiymatlar yoq bolsa, count orqali mantiq tuzib qiymat qaytarishimiz mumkin
+    }
+  }
+//   console.log(count);
+//   if(count > 0) {
+//     console.log(true)
+//   } else console.log(false)
 }
 
-getReverse("Good job");
+
+findDoublers("helol");
 
 
 
@@ -22,9 +34,14 @@ getReverse("Good job");
 
 
 
+// // MIT task E
+// function getReverse(input) {
+//   const new_input = input.split("").reverse();
+//   const final_input = new_input.join("");
+//   console.log(final_input);
+// }
 
-
-
+// getReverse("Good job");
 
 // //  MIT task D. Version-1
 
