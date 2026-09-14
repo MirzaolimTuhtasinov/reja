@@ -1,29 +1,37 @@
-// MIT TASK F
-function findDoublers(input) {
-  const new_input = input.split("").sort();
-  console.log(new_input);
-  // let count = 0;
-  for(let i = 0; i < new_input.length; i++) {
-    if(new_input[i] === new_input[i + 1]) {
-      console.log(new_input[i]);
-      console.log(true);   // Agar bir xil qiymatlar yoq bolsa qiymat qaytarmaydi.
-      // count++;         // Agar bir xil qiymatlar yoq bolsa, count orqali mantiq tuzib qiymat qaytarishimiz mumkin
+// MIT TASK G
+
+function findHighestIndex(input) {
+  let highest = input[0];
+  for (let i = 0; i < input.length; i++) {
+    if (highest < input[i]) {
+      highest = input[i]
     }
   }
-//   console.log(count);
-//   if(count > 0) {
-//     console.log(true)
-//   } else console.log(false)
+  const index = input.indexOf(highest);
+  console.log(`the highest number is ${highest} and its index is ${index}`);
 }
 
-
-findDoublers("helol");
-
+findHighestIndex([12, 33, 22, 33, 11, 66, 10, 13, 66, 33, -111]);
 
 
 
 
 
+// function findHighestIndex(input) {
+//   const input_copy = [...input];
+//   let highest;
+//   for (let i = 0; i < input.length; i++) {
+//     if (input[0] < input[i]) {
+//       input.splice(0, 1);
+//     }
+//     highest = input[0]
+//   }
+//   console.log(input, input_copy);
+//   const index = input_copy.indexOf(highest);
+//   console.log(`the highest number is ${highest} and its index is ${index}`);
+// }
+
+// findHighestIndex([12, 33, 22, 33, 11, 66, 10, 13, 33, -111]);
 
 
 
@@ -31,8 +39,25 @@ findDoublers("helol");
 
 
 
+// // MIT TASK F
+// function findDoublers(input) {
+//   const new_input = input.split("").sort();
+//   console.log(new_input);
+//   // let count = 0;
+//   for(let i = 0; i < new_input.length; i++) {
+//     if(new_input[i] === new_input[i + 1]) {
+//       console.log(new_input[i]);
+//       console.log(true);   // Agar bir xil qiymatlar yoq bolsa qiymat qaytarmaydi.
+//       // count++;         // Agar bir xil qiymatlar yoq bolsa, count orqali mantiq tuzib qiymat qaytarishimiz mumkin
+//     }
+//   }
+// //   console.log(count);
+// //   if(count > 0) {
+// //     console.log(true)
+// //   } else console.log(false)
+// }
 
-
+// findDoublers("helol");
 
 // // MIT task E
 // function getReverse(input) {
