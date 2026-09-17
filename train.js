@@ -1,21 +1,60 @@
-// MIT TASK G
-
-function findHighestIndex(input) {
-  let highest = input[0];
-  for (let i = 0; i < input.length; i++) {
-    if (highest < input[i]) {
-      highest = input[i]
+// MIT TASK K JAVASCRIPT VERSION 1:
+ 
+function countVowels(input) {
+  let count = 0;
+  const vowels = "AEIOUaeiou";
+  for( const letter of input) {
+    if(vowels.includes(letter)) {
+      count++
     }
   }
-  const index = input.indexOf(highest);
-  console.log(`the highest number is ${highest} and its index is ${index}`);
+  return count;
 }
+const result = countVowels("WATERMELONwatermelon");
+console.log("result:", result)
 
-findHighestIndex([12, 33, 22, 33, 11, 66, 10, 13, 66, 33, -111]);
+// Version 2
+function countVowelLetters(input) {
+  let count = 0;
+  for( let i = 0; i < input.length; i++ ) {
+    if(input[i] === 'a' || input[i] === 'e' || input[i] === 'i' || input[i] === 'o' || input[i] === 'u') {
+      count++
+    }
+  }
+  console.log(count);
+}
+ countVowelLetters('watermelon')
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // MIT TASK G
+
+// function findHighestIndex(input) {
+//   let highest = input[0];
+//   for (let i = 0; i < input.length; i++) {
+//     if (highest < input[i]) {
+//       highest = input[i]
+//     }
+//   }
+//   const index = input.indexOf(highest);
+//   console.log(`the highest number is ${highest} and its index is ${index}`);
+// }
+
+// findHighestIndex([12, 33, 22, 33, 11, 66, 10, 13, 66, 33, -111]);
 
 // function findHighestIndex(input) {
 //   const input_copy = [...input];
@@ -32,12 +71,6 @@ findHighestIndex([12, 33, 22, 33, 11, 66, 10, 13, 66, 33, -111]);
 // }
 
 // findHighestIndex([12, 33, 22, 33, 11, 66, 10, 13, 33, -111]);
-
-
-
-
-
-
 
 // // MIT TASK F
 // function findDoublers(input) {
